@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.header__top {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.menu__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu__item {
+    margin-right: 50px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header__logo a {
+    text-decoration: none;
+}
+
+.header__logo img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.icon-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.icon-container i {
+    margin-right: 50px;
+    font-size: 30px;
+    display: flex;
+}
+
+.header__image {
+    height: 1000px;
+    width: 900px;
+    /* position: relative; */
+}
+
+
+
+
+
+.flower {
+    width: 100%;
+    height: 50vh;
+}
+
+
+.header_register {
+    display: grid;
+    justify-content: center;
+    
+}
+
+.input-box .input-field {
+    width: 382px;
+    height: 46px;
+    padding: 0 30px 0 70px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-left: 20px;
+    color: #fff;
+    /* Đổi màu chữ thành màu đen */
+    position: relative;
+    /* Có thể không cần thiết nếu không sử dụng position đặc biệt */
+    background-color: #6aa1da;
+}
+
+/* Sửa màu chữ cho phần placeholder */
+.input-box .input-field input::placeholder {
+    color: #888;
+    /* Đổi màu chữ placeholder thành màu xám nhạt */
+}
+
+.input-box .input-field i {
+    position: absolute;
+    right: 20px;
+    left: -343px;
+    font-size: 20px;
+    margin-right: -20px;
+}
+
+
+
+
+.title_block ::after {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 1px;
+    background: orange;
+    position: relative;
+    bottom: -1px;
+    left: 0;
+}
+
+.wrapper .input-box {
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box .input-field {
+    /* position: relative; */
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    margin: 13px 0;
+}
+
+.input-box .input-field input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+    padding: 15px 15px 15px 40px;
+}
+
+.input-box.input-field input::placeholder {
+    color: #fff;
+}
+
+.input-box .input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper label {
+    font-size: 14.5px;
+
+}
+
+.input-box.check-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "josefin sans", sans-serif;
+    font-weight: 700;
+    font-size: 13.312px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px;
+    padding: 12px 0;
+    min-width: 118px;
+    background: black;
+    margin: 0 0 30px;
+    margin-right: 13px;
+}
+
+/* Định dạng checkbox */
+.wrapper .check-box input[type="checkbox"] {
+    margin-right: 10px;
+    /* Khoảng cách giữa checkbox và text */
+}
+
+
+label {
+    font-weight: 400;
+    font-size: 14px;
+    color: #BBBBBB;
+    font-family: "josefin sans", sans-serif;
+    margin-right: 20px;
+}
+
+.wrapper .btn {
+
+
+    font-family: "josefin sans", sans-serif;
+    font-weight: 700;
+    font-size: 13.312px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px;
+    padding: 12px 0;
+    min-width: 118px;
+    background: black;
+    margin: 0 0 30px;
+    display: block;
+    text-align: center;
+
+}
+
+#login-link {
+    font-size: 12px;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 10px 0px;
+    color: #6aa1da;
+}
+
+.bank-login {
+    font-size: 12px;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 10px 0px;
+    color: #666666;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.footer {
+    background-color: #151515;
+    padding: 80px 0;
+}
+
+.container {
+
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #FFF;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    /* position: relative; */
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    /* background-color: #E91E63; */
+    width: 50px;
+    height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #DDD;
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #FFF;
+    padding-left: 7px;
+}
+
+.footer-col .social-links a {
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #151515;
+    background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+#body_register {
+    margin: 15px 0 0 0;
+}
+.wrapper {
+    position: relative !important;
+}
+
+
+.wrapper_login {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    bottom: 0;
+    display: none;
+    
+}

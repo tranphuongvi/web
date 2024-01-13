@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+
+.wrapper {
+    width: 750px;
+    background: white;
+    border-radius: 10px;
+    color: black;
+
+}
+
+.wrapper {
+    font-size: 13.321px;
+    text-align: left;
+    color: #000000;
+    font-family: "Josefin Sans", sans-serif;
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e5e8;
+    font-weight: 700;
+    padding: 0 0 8px;
+    margin: 0 0 13px;
+}
+.input-box .input-field {
+    width: 382px;
+    height: 46px;
+    padding: 0 30px 0 70px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-left: 20px;
+    color: #fff; /* Đổi màu chữ thành màu đen */
+    position: relative; /* Có thể không cần thiết nếu không sử dụng position đặc biệt */
+    background-color: #6aa1da;
+}
+
+/* Sửa màu chữ cho phần placeholder */
+.input-box .input-field input::placeholder {
+    color: #888; /* Đổi màu chữ placeholder thành màu xám nhạt */
+}
+
+.input-box .input-field i {
+    position: absolute;
+    right: 20px;
+    left: -343px;
+    font-size: 20px;
+    margin-right: -20px;
+}
+
+
+
+
+.title_block ::after {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 1px;
+    background: orange;
+    position: relative;
+    bottom: -1px;
+    left: 0;
+}
+
+.wrapper .input-box {
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box .input-field {
+    position: relative;
+    width: 50%;
+    height: 50px;
+    background: #ffffff;
+    margin: 13px 0;
+}
+
+.input-box .input-field input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+    padding: 15px 15px 15px 40px;
+}
+
+.input-box.input-field input::placeholder {
+    color: #fff;
+}
+
+.input-box .input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper label {
+    font-size: 14.5px;
+    
+}
+
+.input-box.check-box {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    font-family: "josefin sans", sans-serif;
+    font-weight: 700;
+    font-size: 13.312px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px;
+    padding: 12px 0;
+    min-width: 118px;
+    background: black;
+    margin: 0 0 30px;
+    margin-right: 13px;
+}
+
+/* Định dạng checkbox */
+.wrapper .check-box input[type="checkbox"] {
+    margin-right: 10px; /* Khoảng cách giữa checkbox và text */
+}
+
+
+label {
+    font-weight: 400;
+    font-size: 1300px;
+    color: #BBBBBB;
+    font-family: "josefin sans", sans-serif;
+    margin-right: 20px;
+}
+
+.wrapper .btn {
+
+
+    font-family: "josefin sans", sans-serif;
+    font-weight: 700;
+    font-size: 13.312px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px;
+    padding: 12px 0;
+    min-width: 118px;
+    background: black;
+    margin: 0 0 30px;
+    display: block;
+    text-align: center;
+
+}
+
+#login-link {
+    font-size: 12px;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 10px 0px;
+    color: #6aa1da;
+}
+
+.bank-login {
+    font-size: 12px;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 10px 0px;
+    color: #666666;
+
+}

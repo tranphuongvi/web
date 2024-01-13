@@ -1,0 +1,721 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.header__top {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.menu__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu__item {
+    margin-right: 50px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header__logo a {
+    text-decoration: none;
+}
+
+.header__logo img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.icon-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.icon-container i {
+    margin-right: 50px;
+    font-size: 30px;
+    display: flex;
+}
+
+.header__image {
+    height: 1000px;
+    width: 900px;
+    /* position: relative; */
+}
+
+.flower {
+    width: 100%;
+    height: 50vh;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #353434;
+    font-size: 18px;
+}
+
+.banner-text h1 {
+    font-size: 45px; 
+    margin-bottom: 20px; 
+    color: #fffefe;
+}
+
+.banner-text p { 
+    margin-left: 120px; 
+    padding: 10px;
+
+}
+
+.banner-text a {
+    color: #353434;
+    text-decoration: none;
+}
+
+.banner-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* * {
+    box-sizing: border-box;
+} */
+
+.TopContent{
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+
+.namepro{
+    color: var(--color-heading);
+    font-size: 1.5rem;
+    font-weight: 750;
+    line-height: 35px;
+    margin: -5px 0 33px;
+    text-transform: capitalize;
+}
+
+.small-img-group{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 90%;
+  }
+  
+  .small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+  }
+
+.btn-review__all{
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+
+
+
+
+.rating-group {
+    display: inline-flex;
+    width: 20%;
+  }
+  
+  /* make hover effect work properly in IE */
+  .rating__icon {
+    pointer-events: none;
+  }
+  
+  /* hide radio inputs */
+  .rating__input {
+   position: absolute !important;
+   left: -9999px !important;
+  }
+
+  /* set icon padding and size */
+  .rating__label {
+    cursor: pointer;
+    padding: 0 0.1em;
+    font-size: 1rem;
+  }
+  
+  /* set default star color */
+  .rating__icon--star {
+    color: orange;
+  }
+  
+  /* set color of none icon when unchecked */
+  .rating__icon--none {
+    color: #eee;
+  }
+
+  /* if none icon is checked, make it red */
+  .rating__input--none:checked + .rating__label .rating__icon--none {
+    color: red;
+  }
+
+  /* if any input is checked, make its following siblings grey */
+  .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+
+  /* make all stars orange on rating group hover */
+  .rating-group:hover .rating__label .rating__icon--star {
+    color: orange;
+  }
+
+  /* make hovered input's following siblings grey on hover */
+  .rating__input:hover ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+  
+  /* make none icon grey on rating group hover */
+  .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+     color: #eee;
+  }
+
+  /* make none icon red on hover */
+  .rating__input--none:hover + .rating__label .rating__icon--none {
+    color: red;
+  }
+}
+
+#half-stars-example {
+
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  .rating-group {
+    display: inline-flex;
+  }
+  
+  /* make hover effect work properly in IE */
+  .rating__icon {
+    pointer-events: none;
+  }
+  
+  /* hide radio inputs */
+  .rating__input {
+   position: absolute !important;
+   left: -9999px !important;
+  }
+
+  /* set icon padding and size */
+  .rating__label {
+    cursor: pointer;
+    /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+    padding: 0 0.1em;
+    font-size: 2rem;
+  }
+
+  /* add padding and positioning to half star labels */
+  .rating__label--half {
+    padding-right: 0;
+    margin-right: -0.6em;
+    z-index: 2;
+  }
+  
+  /* set default star color */
+  .rating__icon--star {
+    color: orange;
+  }
+  
+  /* set color of none icon when unchecked */
+  .rating__icon--none {
+    color: #eee;
+  }
+
+  /* if none icon is checked, make it red */
+  .rating__input--none:checked + .rating__label .rating__icon--none {
+    color: red;
+  }
+
+  /* if any input is checked, make its following siblings grey */
+  .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+  
+  /* make all stars orange on rating group hover */
+  .rating-group:hover .rating__label .rating__icon--star,
+  .rating-group:hover .rating__label--half .rating__icon--star {
+    color: orange;
+  }
+
+  /* make hovered input's following siblings grey on hover */
+  .rating__input:hover ~ .rating__label .rating__icon--star,
+  .rating__input:hover ~ .rating__label--half .rating__icon--star {
+    color: #ddd;
+  }
+  
+  /* make none icon grey on rating group hover */
+  .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+     color: #eee;
+  }
+
+  /* make none icon red on hover */
+  .rating__input--none:hover + .rating__label .rating__icon--none {
+    color: red;
+  }
+}
+
+#full-stars-example-two {
+
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  .rating-group {
+    display: inline-flex;
+  }
+  
+  /* make hover effect work properly in IE */
+  .rating__icon {
+    pointer-events: none;
+  }
+  
+  /* hide radio inputs */
+  .rating__input {
+   position: absolute !important;
+   left: -9999px !important;
+  }
+  
+  /* hide 'none' input from screenreaders */
+  .rating__input--none {
+    display: none
+  }
+
+  /* set icon padding and size */
+  .rating__label {
+    cursor: pointer;
+    padding: 0 0.1em;
+    font-size: 2rem;
+  }
+  
+  /* set default star color */
+  .rating__icon--star {
+    color: orange;
+  }
+
+  /* if any input is checked, make its following siblings grey */
+  .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+  
+  /* make all stars orange on rating group hover */
+  .rating-group:hover .rating__label .rating__icon--star {
+    color: orange;
+  }
+
+  /* make hovered input's following siblings grey on hover */
+  .rating__input:hover ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+}
+
+
+
+
+
+.product-single__price {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000;
+    line-height: 22px;
+    margin-right: 20px;
+    margin: 25px 0;
+}
+.product-single__shortdes {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 24px; 
+    color: var(--theme-color-success);
+    margin-bottom: 27px;
+}
+ .control-label {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #343434;
+    letter-spacing: 0.01px;
+    min-width: 134px;
+}
+
+.product__available {
+    font-family: var(--font-family-default);
+    font-size: 13px;
+    font-weight: 500;
+    color: #6bb853;
+    text-transform: uppercase;
+}
+
+.wpmh{
+    padding: 0 25px;
+    margin: 30px 0;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #e3e0d3;
+    background-color: white;
+    color: #162950;
+    max-width: 100%;
+    line-height: 1.2;
+    border-radius: 0;
+    padding: 13px 15px;
+  }
+
+  .product-form__item--quantity .quick_view_qty .quantity-selector {
+    height: 48px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #343434;
+    text-align: center;
+    border: none;
+    background-color: #f6f6f6;
+    padding: 0;
+    
+  }
+
+  .product-form__item--quantity
+  .quick_view_qty
+  .quick_view-qty.quick_view-qty-minus {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right: 1px solid #e6e6e6;
+}
+
+.quick_view-qty.quick_view-qty-plus {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 1px solid #e6e6e6;
+  }
+.product-form__item{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.AddToCartText {
+    position: relative;
+    color: var(--color-heading);
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.product-form__item--submit .product-form__cart-submit {
+    padding: 0 5px;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    background: #dcdcdc;
+    position: relative;
+}
+
+
+ .shopify-payment-button__button {
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    white-space: normal;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 0;
+    background-color: var(--color-heading);
+    margin-top: 10px;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 30px;
+    font-weight: 800;
+  }
+
+  .dbat{
+    color: #222222;
+    font-size: 10px;
+  }
+
+  .cs{
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .ct1320{
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+  }
+
+  .nav > li button {
+    font-size: 1.6rem;
+    font-weight: 799;
+
+    line-height: 50px;
+    color: #b7b7b7;
+    display: block;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: none;
+    position: relative;
+    background: none;
+}
+
+.nav > li{
+    margin-right: 40px;
+    padding: 0 0 20px 0;
+
+}
+
+.nav{
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+}
+
+.ph{
+    background: #f1f1f1;
+    padding: 100px;
+}
+
+.product-single__review {
+    font-size: 2.2rem;
+    color: var(--color-heading);
+    font-family: var(--font-family-primary);
+    text-align: left !important;
+    margin-bottom: 35px !important;
+    text-transform: uppercase;
+}
+.vdg{
+    height: 50px;
+    line-height: 50px;
+    max-width: initial !important;
+    width: 100% !important;
+    padding: 0;
+    border-radius: 5px !important;
+    font-size: 11px !important;
+    font-weight: 700;
+    font-family: var(--font-family-primary);
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.title-block{
+    color: rgb(34, 34, 34);
+    font-size: 24px;
+    visibility: visible;
+    animation-name: fadeInUp;
+    margin: 100px 0;
+    text-align: center;
+    font-weight: 900;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.container_90{
+    width: 100%;
+    max-width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+}
+
+.product__thumbnail-second {
+}
+
+.repos{
+    position: relative;
+}
+
+.product__title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin: 20px 0 15px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #337ab7;
+    line-height: 24px;
+}
+
+.product__price {
+    color: #666;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 22px;
+}
+
+.repos img{
+    width: 300px;
+}
+
+
+
+
+
+.footer {
+    background-color: #151515;
+    padding: 80px 0;
+}
+
+.container {
+
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #FFF;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    /* position: relative; */
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    /* background-color: #E91E63; */
+    width: 50px;
+    height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #DDD;
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #FFF;
+    padding-left: 7px;
+}
+
+.footer-col .social-links a {
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #151515;
+    background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+#body_register {
+    margin: 15px 0 0 0;
+}
+
+.wrapper {
+    position: relative !important;
+}
+
+
+.wrapper_login {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    bottom: 0;
+    display: none;
+
+}

@@ -57,12 +57,16 @@ body {
     height: auto;
 
 }
-
+a{
+    text-decoration: none;
+}
 .icon-container {
     display: flex;
     justify-content: flex-end;
     margin-left: 10px;
     align-items: center;
+    list-style: none;
+    
 }
 
 .icon-container i {

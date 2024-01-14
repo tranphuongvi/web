@@ -58,11 +58,16 @@ body {
 
 }
 
+a{
+  text-decoration: none;
+}
+
 .icon-container {
     display: flex;
     justify-content: flex-end;
     margin-left: 10px;
     align-items: center;
+    list-style: none;
 }
 
 .icon-container i {
@@ -220,7 +225,6 @@ body {
   .rating__input--none:hover + .rating__label .rating__icon--none {
     color: red;
   }
-}
 
 #half-stars-example {
 
@@ -572,8 +576,7 @@ textarea {
     padding-bottom: 30px;
 }
 
-.product__thumbnail-second {
-}
+
 
 .repos{
     position: relative;
